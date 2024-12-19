@@ -26,6 +26,25 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;display=swap"
     rel="stylesheet" />
+  <style>
+      .gallery-section {
+      padding: 20px;
+    }
+    .gallery-images, .gallery-videos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .gallery-item, .video-item {
+      flex: 0 0 calc(33.333% - 15px); /* 3 items per row */
+      box-sizing: border-box;
+    }
+    .gallery-item img, .video-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Gallery</title>
@@ -177,34 +196,104 @@
         <div id="images-section" class="col-md-12">
           <h2>Images</h2>
           <div class="gallery-images">
+            <!-- Images -->
             <figure class="gallery-item">
-              <a href="assets/images/img1.jpg" data-fancybox="gallery">
-                <img src="assets/images/img1.jpg" alt="Image 1" />
+              <a href="assets/videos/IMG-20240924-WA0027.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20240924-WA0027.jpg" alt="Image 1">
               </a>
             </figure>
             <figure class="gallery-item">
-              <a href="assets/images/img2.jpg" data-fancybox="gallery">
-                <img src="assets/images/img2.jpg" alt="Image 2" />
+              <a href="assets/videos/IMG-20241217-WA0020.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0020.jpg" alt="Image 2">
               </a>
             </figure>
-            <!-- Add more images as needed -->
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0021.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0021.jpg" alt="Image 3">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0022.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0022.jpg" alt="Image 4">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0023.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0023.jpg" alt="Image 5">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0024.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0024.jpg" alt="Image 6">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0025.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0025.jpg" alt="Image 7">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0026.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0026.jpg" alt="Image 8">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0027.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0027.jpg" alt="Image 9">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0028.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0028.jpg" alt="Image 10">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0029.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0029.jpg" alt="Image 11">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0030.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0030.jpg" alt="Image 12">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0031.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0031.jpg" alt="Image 13">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0032.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0032.jpg" alt="Image 14">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241217-WA0033.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241217-WA0033.jpg" alt="Image 15">
+              </a>
+            </figure>
+            <figure class="gallery-item">
+              <a href="assets/videos/IMG-20241219-WA0000.jpg" data-fancybox="gallery">
+                <img src="assets/videos/IMG-20241219-WA0000.jpg" alt="Image 16">
+              </a>
+            </figure>
           </div>
         </div>
         <!-- Videos Section -->
         <div id="videos-section" class="col-md-12" style="display: none;">
           <h2>Videos</h2>
           <div class="gallery-videos">
+            <!-- Videos -->
             <div class="video-item">
-              <a href="https://www.youtube.com/watch?v=video1" data-fancybox="video-gallery">
-                <img src="assets/images/video-thumbnail1.jpg" alt="Video 1" />
+              <a href="assets/videos/VID-20241217-WA0018.mp4" data-fancybox="video-gallery">
+                <img src="video-thumbnail1.jpg" alt="Video 1">
               </a>
             </div>
             <div class="video-item">
-              <a href="https://www.youtube.com/watch?v=video2" data-fancybox="video-gallery">
-                <img src="assets/images/video-thumbnail2.jpg" alt="Video 2" />
+              <a href="assets/videos/VID-20241217-WA0019.mp4" data-fancybox="video-gallery">
+                <img src="video-thumbnail2.jpg" alt="Video 2">
               </a>
             </div>
-            <!-- Add more videos as needed -->
           </div>
         </div>
       </div>
@@ -585,15 +674,4 @@
             </body>
 
             </html>
-            </ul>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </footer>
-            </div>
-            </body>
-
-            </html>
+            
