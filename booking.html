@@ -28,15 +28,16 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-        <!-- ...existing code... -->
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-        <!-- ...existing code... -->
+    <!-- ...existing code... -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- ...existing code... -->
     <style>
-        body{
+        body {
             font: 400 normal 14px / 18px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         }
+
         /* Booking Form Styles */
         .booking-form-wrap {
             padding: 50px 0;
@@ -124,19 +125,20 @@
         .width-5:last-child {
             margin-right: 0;
         }
+
         .date-picker-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
+            display: flex;
+            justify-content: space-between;
+        }
 
-.date-picker-wrapper .width-5 {
-    width: 48%;
-    margin-right: 0;
-}
+        .date-picker-wrapper .width-5 {
+            width: 48%;
+            margin-right: 0;
+        }
 
-.date-picker-wrapper .width-5:last-child {
-    margin-right: 0;
-}
+        .date-picker-wrapper .width-5:last-child {
+            margin-right: 0;
+        }
     </style>
     <title>LIS Exports</title>
 </head>
@@ -231,7 +233,7 @@
                                                 <a href="Pahalgam.html">Pahalgam</a>
                                             </li>
                                             <li>
-                                                <a href="Sonamarg.html">Sonamarg</a>
+                                                <a href="Sonmarg.html">Sonmarg</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -245,7 +247,7 @@
                             </nav>
                         </div>
                         <div class="header-btn">
-                            <a href="index.html#" class="round-btn">Book Now</a>
+                            <a href="booking.html" class="round-btn">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -294,9 +296,9 @@
                 </div>
             </section>
 
-            
-            <div class="booking-form-wrap" >
-                <div class="booking-form-inner primary-bg" >
+
+            <div class="booking-form-wrap">
+                <div class="booking-form-inner primary-bg">
                     <h3>BOOKING FORM</h3>
                     <p>
                         Please fill out the form below to inquire about
@@ -306,13 +308,16 @@
                         <p>
                             <input type="text" name="name" placeholder="Your Name...">
                         </p>
+                        <p>
+                            <input type="text" name="destination" id="destination" placeholder="destination...">
+                        </p>
                         <div class="horizontal-fields-wrapper">
-                        <p class="width-5">
-                            <input type="email" name="email" placeholder="Your Email...">
-                        </p>
-                        <p class="width-5">
-                            <input type="tel" name="phone" placeholder="Your Phone...">
-                        </p>
+                            <p class="width-5">
+                                <input type="email" name="email" placeholder="Your Email...">
+                            </p>
+                            <p class="width-5">
+                                <input type="tel" name="phone" placeholder="Your Phone...">
+                            </p>
                         </div>
                         <div class="horizontal-fields-wrapper">
                             <p class="width-5">
@@ -324,12 +329,14 @@
                         </div>
                         <div class="date-picker-wrapper">
                             <p class="width-5">
-                                <label>Checkin Date</label>
-                                <input class="input-date-picker" type="text" name="checkin" placeholder="MM / DD / YY" autocomplete="off">
+                               
+                                <input class="input-date-picker" type="text" name="checkin" placeholder="Checkin Date"
+                                    autocomplete="off">
                             </p>
                             <p class="width-5">
-                                <label>Checkout Date</label>
-                                <input class="input-date-picker" type="text" name="checkout" placeholder="MM / DD / YY" autocomplete="off">
+                                
+                                <input class="input-date-picker" type="text" name="checkout" placeholder="Checkout Date"
+                                    autocomplete="off">
                             </p>
                         </div>
                         <p>
@@ -382,9 +389,9 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="mailtop:info@lisexports.com">
+                                                    <a href="mailtop:info@lisexports.in">
                                                         <i aria-hidden="true" class="icon icon-envelope1"></i>
-                                                        info@lisexports.com
+                                                        info@lisexports.in
                                                     </a>
                                                 </li>
                                                 <li>
@@ -481,13 +488,13 @@
                                     <div class="footer-menu">
                                         <ul>
                                             <li>
-                                                <a href="https://lisexports.com/policy.html">Privacy Policy</a>
+                                                <a href="https://lisexports.in/policy.html">Privacy Policy</a>
                                             </li>
                                             <li>
-                                                <a href="https://lisexports.com/policy.html">Term & Condition</a>
+                                                <a href="https://lisexports.in/policy.html">Term & Condition</a>
                                             </li>
                                             <li>
-                                                <a href="https://lisexports.com/faq.html">FAQ</a>
+                                                <a href="https://lisexports.in/faq.html">FAQ</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -590,9 +597,9 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="mailtop:info@lisexports.com">
+                                        <a href="mailtop:info@lisexports.in">
                                             <i aria-hidden="true" class="icon icon-envelope1"></i>
-                                            info@lisexports.com
+                                            info@lisexports.in
                                         </a>
                                     </li>
                                     <li>
@@ -626,7 +633,7 @@
     <script src="assets/vendors/slick-nav/jquery.slicknav.js"></script>
     <script src="assets/js/custom.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $(".input-date-picker").datepicker({
                 dateFormat: "mm/dd/yy"
             });
